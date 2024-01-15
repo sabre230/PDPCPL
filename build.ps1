@@ -1,0 +1,1 @@
+ps2exe -inputfile "./update.ps1" -outputfile "./launcher.exe" -iconfile "./pd.ico" -title "Small but Perfect Launcher" -description "Launcher for updating the Perfect Dark PC Port" -version "1.0" -DPIAware
