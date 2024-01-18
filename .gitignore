@@ -1,7 +1,11 @@
+# Files
 build.ps1
-current-commit.txt
-pd.ini
-data/pd.ntsc-final.z64
 pd.exe
 
+# Directories
+data/
+
+# Bulk
 *.dll
+*.txt
+*.ini
