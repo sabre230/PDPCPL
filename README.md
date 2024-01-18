@@ -23,10 +23,17 @@ Everything under the hood is exposed in the `update.ps1` file. You can open it i
 	- If there isn't a `current-commit.txt`, PDPCPL will create one.
 - Since the Perfect Dark PC port has builds auto-generated when there's a new push, checking the Commits Atom feed seemed like as good a place as any to see if there's a new build available.
 	- I'm using the Atom feed specifically so the end-user doesn't need to have anything extra installed.
+- The console is always available to monitor what the application is doing.
 
 
 ## How to use PDPCPL
-- Run the `run.bat` batch file to start the GUI application.
+- Run `launcher.exe` and the application will open
+- Select a branch using the drop-down menu. The default branch is `port`.
+	- If you want netplay to be available, be sure to select `port-net`.
 - Click `Update` to download the most recent update
 	- If you have a `current-commit.txt` file that is preventing an update, you can delete it and click 'Update' again to force the application to redownload the latest auto-build.
-- 
+- Once the application has finished downloading the game files, put your `pd.ntsc-final.z64` rom in the `data` folder that was created.
+- You can start the game by running `pd.exe` or by pressing the "Play" button in the launcher.
+
+## Netplay?
+NetPlay instructions and known issues can be [found here](https://github.com/fgsfdsfgs/perfect_dark/blob/port-net/docs/netplay.md#experimental-netplay-branch).
